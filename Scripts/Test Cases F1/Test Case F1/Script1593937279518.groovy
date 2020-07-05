@@ -14,4 +14,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://applitools.com/helloworld/')
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/a_diff1'))
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/a_diff2'))
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/a_diff1'))
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/button_Click me'))
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/a_diff2'))
+
+WebUI.click(findTestObject('Object Repository/RC/Page_Applitools/button_Click me'))
+
+WebUI.closeBrowser()
 
